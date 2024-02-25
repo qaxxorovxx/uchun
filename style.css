@@ -1,0 +1,110 @@
+body {
+    background-image: url(img/asd.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#clock {
+    font-size: 60px;
+    text-align: center;
+    padding-top: 50px;
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+.diiiv {
+    display: flex;
+    gap: 50px;
+    width: 600px;
+    padding-top: 100px;
+    margin: 0 auto;
+}
+
+input[type=text] {
+
+    width: 400px;
+    height: 50px;
+    border: none;
+    background-color: black;
+    border-radius: 20px;
+    opacity: 50%;
+    color: wheat;
+    padding-left: 20px;
+    font-size: 110%;
+}
+
+
+/* CSS */
+.button-52 {
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    width: 200px;
+    height: 50px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+
+}
+
+
+
+
+.lol div {
+    padding-top: 20px;
+    font-size: 150%;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    color: aliceblue;
+}
+
+.fancy {
+    position: relative;
+    white-space: nowrap;
+}
+
+.fancy:after {
+    --deco-height: 0.3125em;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: calc(var(--deco-height) * -0.625);
+    height: var(--deco-height);
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='64' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23a)'%3E%3Cpath d='M-17 30.5C-1 22 72-4 54 13 37.9 28.2-2.5 57.5 16 55.5s72-29 104-40' stroke='%2300FDCF' stroke-width='10'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' d='M0 0h100v64H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+    background-size: auto 100%;
+    background-repeat: round;
+    background-position: 0em;
+}
+
+.button-52:after {
+    content: "";
+    background-color: #ffe54c;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+}
+
+.button-52:hover:after {
+    top: 0px;
+    left: 0px;
+}
+
+@media (min-width: 768px) {
+    .button-52 {
+        padding: 13px 50px 13px;
+    }
+}
